@@ -12,6 +12,10 @@ public class Opcja implements Akcja {
         this.akcja = akcja;
     }
 
+    public Opcja(int identyfikator, String trescKomunikatu) {
+        this.identyfikator = identyfikator;
+        this.trescKomunikatu = trescKomunikatu;
+    }
 
     public int getIdentyfikator() {
         return identyfikator;
@@ -36,7 +40,6 @@ public class Opcja implements Akcja {
     public void setAkcja(Akcja akcja) {
         this.akcja = akcja;
     }
-
 
     public void wykonajAkcje() {
         Scanner scanner = new Scanner(System.in);

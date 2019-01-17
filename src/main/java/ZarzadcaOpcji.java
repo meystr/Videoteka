@@ -1,7 +1,9 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ZarzadcaOpcji {
+
     public List<Opcja> listaOpcji = new ArrayList<Opcja>();
 
 
@@ -23,7 +25,7 @@ public class ZarzadcaOpcji {
                 '}';
     }
 
-    public void wykonajopcje(int idOpcji) {
+    public void wykonajopcje(int idOpcji) throws IOException {
 
         for (int i = 0; i < listaOpcji.size(); i++) {
             Opcja opcja = listaOpcji.get(i);
